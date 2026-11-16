@@ -113,15 +113,20 @@ function nextQuestion() {
     if (currentQuestion < questions.length - 1) {
         currentQuestion = currentQuestion + 1;
         displayQuestion();
-    } else {
-        document.getElementById("question").innerHTML = "Quiz completed! Your score is " + score + " out of " + questions.length + ".";
-        document.getElementById("answers").innerHTML = "";
-        document.getElementById("feedback").innerHTML = "You can now save your score using the button below.";
-        document.getElementById("nextButton").style.display = "none";
-        document.getElementById("scoreInput").value = score;
-        document.getElementById("totalInput").value = questions.length;
-        document.getElementById("scoreForm").style.display = "block";
-    }
+    } else else {
+    document.getElementById("question").innerHTML = "Quiz completed!";
+    document.getElementById("answers").innerHTML = "";
+
+    document.getElementById("feedback").innerHTML =
+        "Great work, space explorer!";
+
+    document.getElementById("nextButton").style.display = "none";
+
+    document.getElementById("finalScore").innerHTML =
+        "Your score: " + score + " out of " + questions.length;
+
+    document.getElementById("scoreForm").style.display = "block";
+}
 }
 
 window.onload = function() {
