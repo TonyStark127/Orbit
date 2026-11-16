@@ -104,11 +104,10 @@
             </div>
             <p id="feedback"></p>
             <button class="main-button" id="nextButton" onclick="nextQuestion()">NEXT QUESTION</button>
-            <form action="orbit.php" method="post" id="scoreForm">
-                <input type="hidden" name="score" id="scoreInput" value="0">
-                <input type="hidden" name="total" id="totalInput" value="3">
-                <input type="submit" class="main-button" id="submitScore" value="SAVE MY SCORE">
-            </form>
+            <div id="scoreForm" style="display:none;">
+                <p id="finalScore"></p>
+                <a href="index.html" class="main-button">RETURN TO ORBIT</a>
+            </div>
         </div>
     </div>
 
